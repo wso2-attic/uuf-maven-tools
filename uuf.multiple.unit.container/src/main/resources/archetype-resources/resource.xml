@@ -1,0 +1,20 @@
+<assembly>
+    <id>resources</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <!-- Take everything inside the directories folder -->
+            <directory>units</directory>
+            <!-- And place it inside the root of the zip file -->
+            <outputDirectory>/</outputDirectory>
+
+            <excludes>
+
+                <exclude>**/pom.xml</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>
