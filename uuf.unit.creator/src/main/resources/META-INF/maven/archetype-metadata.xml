@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="uuf-unit-archetype"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>docs</directory>
+      <includes>
+        <include>**/*.txt</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <excludes>
+        <exclude>*.iml</exclude>
+        <exclude>**/.idea/**</exclude>
+      </excludes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>public/less</directory>
+      <includes>
+        <include>**/*.less</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>public/css</directory>
+      <includes>
+        <include>**/*.css</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>public/js</directory>
+      <includes>
+        <include>**/*.js</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>public/img</directory>
+      <includes>
+        <include>**/*.jpg</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>resource.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>sample.js</include>
+        <include>sample.json</include>
+        <include>sample.hbs</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
