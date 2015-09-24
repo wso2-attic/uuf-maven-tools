@@ -32,6 +32,8 @@
       <directory></directory>
       <includes>
         <include>resource.xml</include>
+        <include>jaggery.conf</include>
+        <include>**/lib/**</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
