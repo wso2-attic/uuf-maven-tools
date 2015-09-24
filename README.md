@@ -33,13 +33,13 @@ This repository contains three main modules.
   5. This will create a project for the unit including a pom file in the directory you are in.
      Then open up the project using an IDE and modify the created unit as per your need.
 
-  ## How to get unit zip 
+## How to get unit zip 
 
      After finishing the unit implementation build the module  with `mvn clean install`
 
      It creates a zip file with the deployable unit in the target directory.
 
-  ## How to get set of units  as a zip
+## How to get set of units  as a zip
 
   To get a bundle of units as a single zip file use the `uuf.multiple.unit.container` which is installed as an
   archetype when the project build.
@@ -60,7 +60,7 @@ This repository contains three main modules.
 
     This will create a container of units with a empty folder named `units`
 
-  ## Adding units to the units container :
+## Adding units to the units container :
 
     1. Go to the directory `units` inside the container project.
 
@@ -72,7 +72,7 @@ This repository contains three main modules.
     project is build.
 
 
-  ## How to Create an App :
+## How to Create an App :
 
    1. Go to the directory that you want to create the app and type the following command.
 
@@ -96,13 +96,13 @@ This repository contains three main modules.
       Then open up the project using an IDE and modify the created app as per your need by creating units inside the
       units directory as mentioned above or importing units into the app.
 
-  ## How to get the deployable app :
+## How to get the deployable app :
 
   There are two types of dependencies which need to be added to the app.
 
   Those are :
 
-       ### 1. Dependency of uuf-template-app  
+### 1. Dependency of uuf-template-app  
        
         To do this you have to first build the uuf-template-app.
         
@@ -116,7 +116,7 @@ This repository contains three main modules.
         
              This will add the libraries and configurations from the uuf-template-app to the application project you created.
                 
-       ### 2. Dependencies of units which are imported.
+### 2. Dependencies of units which are imported.
        
              You can add units which are created by other users to your application                
           
