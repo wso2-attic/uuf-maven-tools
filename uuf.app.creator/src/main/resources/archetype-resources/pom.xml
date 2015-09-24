@@ -26,6 +26,31 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>truezip-maven-plugin</artifactId>
+                <version>1.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-package</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <fileset>
+                                <!--This directory is to be modified-->
+                                <directory>
+                                    ${settings.localRepository}/uuf/template/app/uuf-template-app/1.0-SNAPSHOT/uuf-template-app-1.0-SNAPSHOT.zip
+                                </directory>
+                                <outputDirectory>${project.basedir}</outputDirectory>
+                            </fileset>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
