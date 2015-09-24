@@ -126,7 +126,7 @@ This repository contains three main modules.
         
   2. Go to the root directory of the uuf-template-app and build it using `mvn clean install`
         
-         This will add the dependencies of the uuf-template app to your local maven repository.
+  This will add the dependencies of the uuf-template app to your local maven repository.
         
   3. Again go to the app project that you created using the uuf.app.creator archetype and build the project with `mvn clean install`
         
