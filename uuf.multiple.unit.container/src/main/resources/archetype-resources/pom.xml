@@ -24,6 +24,8 @@
                             <descriptors>
                                 <descriptor>resource.xml</descriptor>
                             </descriptors>
+                            <finalName>${pom.artifactId}-${pom.version}</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>
                 </executions>
