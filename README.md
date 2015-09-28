@@ -1,43 +1,45 @@
+# uuf-maven-tools
+
 This repository contains three main modules.
 
 1. uuf.unit.creator - contains the archetype of unit component
 2. uuf.app.creator- contains the archetype of app component
 3. uuf.multiple.unit.container - contains the archetype of multiple unit skeleton
 
-# How to install archetypes
+## Prerequisites : 
+
+          Apache maven `https://maven.apache.org/install.html`
+
+## How to install archetypes
 
   1. Clone this repository. git clone `https://github.com/wso2-incubator/uuf-maven-tools.git`
 
   2. Build the project with `maven install` to install the archetypes to the local machine.
-
+  
+  The details of the archetypes installed are as follows. 
+  
+  
+#### unit.creator   
+   group-id : uuf.maven.tools
+   artifact-id : uuf.unit.creator
+   
+#### app.creator
+   group-id : uuf.maven.tools
+   artifact-id : uuf.app.creator
+   
+#### multiple.unit.container
+   group-id : uuf.maven.tools
+   artifact-id : uuf.multiple.unit.container
+   
+   
 ## How to create a unit
 
-  1. Go to the directory that you want to create the unit and type the following command.
+  Go to the directory that you want to create the unit and type the following command.
 
-        mvn archetype:generate -DarchetypeCatalog=local
-
-  2. This will show you all the local archetypes that have installed in your local repository.
-
-  3. Choose the number of the following archetype listed there and enter the number.
-
-        local -> uuf.maven.tools:uuf.unit.creator (uuf.unit.creator))
-
-  4. Then give the following details prompt.
+        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.unit.creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
     
-
-          group-id :  e.g. org.wso2.uuf.<product_name>.<app_name>.units.<unit_name>
-     
-          artifact-id : e.g. org-wso2-uuf-<product_name>-<app_name>-units-<unit_name>
       
-          version : e.g. 1.0-SNAPSHOT
-      
-          package: pom
-          
-          Confirm Properties configuration : Y
-      
-      
-  5. This will create a project for the unit including a pom file in the directory you are in.
-     Then open up the project using an IDE and modify the created unit as per your need.
+  This will create a project for the unit including a pom file in the directory you are in. Then open up the project using an IDE and modify the created unit as per your need.
 
 ## How to get unit zip 
 
@@ -47,27 +49,12 @@ This repository contains three main modules.
 
 ## How to get set of units  as a zip
 
-  To get a bundle of units as a single zip file use the `uuf.multiple.unit.container` which is installed as an 
-  archetype when the project build.
+  To get a bundle of units as a single zip file use the `uuf.multiple.unit.container` which is installed as an archetype when the project build.
   
   Follow the same process of unit project to create a multiple unit container with following details.
   Archetype to select :
     
-       local -> uuf.maven.tools:uuf.multiple.unit.container (uuf.multiple.unit.container)
-      
-
-  Details to create the project with the multiple unit container :
-
-          group-id :  e.g. org.wso2.uuf.<product_name>.<app_name>.units.<unit_name>
-          
-          artifact-id : e.g. org-wso2-uuf-<product_name>-<app_name>-units-<unit_name>
-          
-          version : e.g. 1.0-SNAPSHOT  
-          
-          package: pom
-          
-          Confirm Properties configuration : Y
-        
+        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.multiple.unit.container -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
 
   This will create a container of units with a empty folder named `units`
 
@@ -85,32 +72,13 @@ This repository contains three main modules.
 
 ## How to Create an App :
 
-   1. Go to the directory that you want to create the app and type the following command.
+   Go to the directory that you want to create the app and type the following command.
 
-        mvn archetype:generate -DarchetypeCatalog=local
+       mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.app.creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
 
-   2. This will show you all the local archetypes that have installed in your local repository.
-
-   3. Choose the number of the following archetype listed there and enter the number.
-
-        local -> uuf.maven.tools:uuf.app.creator (uuf.app.creator)
-
-   4. Then give the following details prompt.
-
-          group-id :  e.g. org.wso2.uuf.<product_name>.<app_name>.units.<unit_name>
-      
-          artifact-id : e.g. org-wso2-uuf-<product_name>-<app_name>-units-<unit_name>
-       
-          version : e.g. 1.0-SNAPSHOT
-       
-          package: pom
-       
-          Confirm Properties configuration : Y
-       
-
-   5. This will create a project for the app including a pom file in the directory you are in.
-      Then open up the project using an IDE and modify the created app as per your need by creating units inside the
-      units directory as mentioned above or importing units into the app.
+   This will create a project for the app including a pom file in the directory you are in.
+   
+   Then open up the project using an IDE and modify the created app as per your need by creating units inside the units directory as mentioned above or importing units into the app.
 
 ## How to get the deployable app :
 
@@ -136,9 +104,8 @@ This repository contains three main modules.
        
   You can add units which are created by other users to your application                
           
-          -- This feature is under development --
-          
-          
+          -- This feature is under development --          
+                    
 
  After finishing the unit implementation build the project  with `mvn clean install`
 
