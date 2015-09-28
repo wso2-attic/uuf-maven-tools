@@ -6,13 +6,12 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <!-- Take everything inside the directories folder -->
+            <!-- Take everything inside the units folder -->
             <directory>units</directory>
-            <!-- And place it inside the root of the zip file -->
+            <!-- Place the zip in the target folder -->
             <outputDirectory>/</outputDirectory>
-
+            <!-- Excluding pom -->
             <excludes>
-
                 <exclude>**/pom.xml</exclude>
             </excludes>
         </fileSet>

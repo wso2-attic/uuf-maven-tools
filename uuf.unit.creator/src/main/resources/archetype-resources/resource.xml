@@ -3,12 +3,13 @@
     <formats>
         <format>zip</format>
     </formats>
-    <!--<includeBaseDirectory>false</includeBaseDirectory>-->
     <fileSets>
         <fileSet>
-
+            <!-- Take everything inside the root directory -->
             <directory></directory>
-            <outputDirectory>/webapp</outputDirectory>
+            <!-- Place the zip inside the unit directory in target -->
+            <outputDirectory>/</outputDirectory>
+            <!-- Exclude files and directories -->
             <excludes>
                 <exclude>pom.xml</exclude>
                 <exclude>*.iml</exclude>

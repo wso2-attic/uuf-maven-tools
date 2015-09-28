@@ -3,41 +3,34 @@
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <fileSets>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>docs</directory>
-      <includes>
-        <include>**/*.txt</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory></directory>
-      <excludes>
-        <exclude>*.iml</exclude>
-        <exclude>.idea</exclude>
-      </excludes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>pages</directory>
-      <includes>
-        <include>**/*.hbs</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>layouts</directory>
-      <includes>
-        <include>**/*.hbs</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory></directory>
-      <includes>
-        <include>resource.xml</include>
-        <include>jaggery.conf</include>
-        <include>**/lib/**</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>units</directory>
-    </fileSet>
+      <fileSet filtered="true" encoding="UTF-8">
+          <directory>docs</directory>
+          <includes>
+              <include>**/*.txt</include>
+          </includes>
+      </fileSet>
+      <fileSet filtered="true" encoding="UTF-8">
+          <directory>/</directory>
+          <includes>
+              <directory>pages</directory>
+              <directory>layouts</directory>
+              <include>resource.xml</include>
+              <include>jaggery.conf</include>
+              <include>**/lib/**</include>
+          </includes>
+          <excludes>
+              <exclude>*.iml</exclude>
+              <exclude>.idea</exclude>
+          </excludes>
+      </fileSet>
+      <fileSet encoding="UTF-8">
+          <directory>pages</directory>
+      </fileSet>
+      <fileSet encoding="UTF-8">
+          <directory>units</directory>
+      </fileSet>
+      <fileSet encoding="UTF-8">
+          <directory>layouts</directory>
+      </fileSet>
   </fileSets>
 </archetype-descriptor>
