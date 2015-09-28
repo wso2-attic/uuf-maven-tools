@@ -21,14 +21,17 @@ This repository contains three main modules.
   
 #### unit.creator   
    group-id : uuf.maven.tools
+   
    artifact-id : uuf.unit.creator
    
 #### app.creator
    group-id : uuf.maven.tools
+   
    artifact-id : uuf.app.creator
    
 #### multiple.unit.container
    group-id : uuf.maven.tools
+   
    artifact-id : uuf.multiple.unit.container
    
    
