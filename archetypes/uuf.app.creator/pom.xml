@@ -3,13 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>uuf-maven-tools</artifactId>
-        <groupId>uuf.maven.tools</groupId>
+        <artifactId>uuf-maven-archetypes</artifactId>
+        <groupId>org.wso2.carbon.ui.uuf.maven.tools</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>uuf.app.creator</artifactId>
+    <artifactId>uuf-app-creator</artifactId>
     <packaging>maven-archetype</packaging>
+    <name>WSO2 Carbon UI - UUF App Creator Archetype</name>
 
     <build>
         <extensions>

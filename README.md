@@ -39,7 +39,7 @@ This repository contains three main modules.
 
   Go to the directory that you want to create the unit and type the following command.
 
-        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.unit.creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
+        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=org.wso2.carbon.ui.uuf.maven.tools -DarchetypeArtifactId=uuf-unit-creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=org.wso2.carbon.ui.uuf.<app_name>.<unit_name> -DartifactId=<unit_name> -DinteractiveMode=false
     
       
   This will create a project for the unit including a pom file in the directory you are in. Then open up the project using an IDE and modify the created unit as per your need.
@@ -57,7 +57,7 @@ This repository contains three main modules.
   Follow the same process of unit project to create a multiple unit container with following details.
   Archetype to select :
     
-        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.multiple.unit.container -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
+        mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=org.wso2.carbon.ui.uuf.maven.tools -DarchetypeArtifactId=uuf-multiple-unit-container -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=org.wso2.carbon.ui.uuf.<name_for_set_of_units> -DartifactId=<name_for_set_of_units> -DinteractiveMode=false
 
   This will create a container of units with a empty folder named `units`
 
@@ -77,7 +77,7 @@ This repository contains three main modules.
 
    Go to the directory that you want to create the app and type the following command.
 
-       mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=uuf.maven.tools -DarchetypeArtifactId=uuf.app.creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.rm.trial.mynew -DartifactId=myNewProject -DinteractiveMode=false
+       mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=org.wso2.carbon.ui.uuf.maven.tools -DarchetypeArtifactId=uuf-app-creator -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=org.wso2.carbon.ui.uuf.<app_name> -DartifactId=<app_name> -DinteractiveMode=false
 
    This will create a project for the app including a pom file in the directory you are in.
    

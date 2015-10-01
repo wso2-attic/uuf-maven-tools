@@ -19,7 +19,7 @@
             <includes>
                 <include>resource.xml</include>
                 <include>.gitignore</include>
-                <include>unit_name.JS</include>
+                <include>unit_name.js</include>
                 <include>unit_name.json</include>
                 <include>unit_name.hbs</include>
             </includes>

@@ -6,19 +6,30 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <!-- Take everything inside the root directory -->
             <directory></directory>
-            <!-- And place it inside the root of the zip file -->
             <outputDirectory>/</outputDirectory>
             <!-- Excluding files and directories -->
             <excludes>
                 <exclude>pom.xml</exclude>
                 <exclude>*.iml</exclude>
-                <exclude>*.jar</exclude>
                 <exclude>**/src/**</exclude>
                 <exclude>**/target/**</exclude>
                 <exclude>resource.xml</exclude>
+                <exclude>**/layouts/**</exclude>
+                <exclude>**/pages/**</exclude>
+                <exclude>**/units/**</exclude>
             </excludes>
         </fileSet>
+        <fileSet>
+            <directory></directory>
+            <outputDirectory>app</outputDirectory>
+            <!-- Including files and directories -->
+            <includes>
+                <include>**/layouts/**</include>
+                <include>**/pages/**</include>
+                <include>**/units/**</include>
+            </includes>
+        </fileSet>
+
     </fileSets>
 </assembly>

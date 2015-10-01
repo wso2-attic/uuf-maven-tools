@@ -5,6 +5,7 @@
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
+    <name>${artifactId}</name>
     <build>
         <plugins>
             <!-- Plugin to zip the unit set -->
@@ -13,7 +14,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>make shared resources</id>
+                        <id>pack</id>
                         <goals>
                             <goal>single</goal>
                         </goals>
@@ -22,7 +23,7 @@
                             <descriptors>
                                 <descriptor>resource.xml</descriptor>
                             </descriptors>
-                            <finalName>${pom.artifactId}</finalName>
+                            <finalName>${project.artifactId}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>
