@@ -8,7 +8,7 @@ This repository contains three main modules.
 
 ## Prerequisites : 
 
-          Apache maven `https://maven.apache.org/install.html`
+Apache maven `https://maven.apache.org/install.html`
 
 ## How to install archetypes
 
