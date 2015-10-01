@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>uuf-maven-tools</artifactId>
+        <groupId>org.wso2.carbon.ui.uuf.maven.tools</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>uuf-maven-archetypes</artifactId>
+    <name>WSO2 Carbon UI - UUF Archetypes</name>
+
+    <modules>
+        <module>uuf.multiple.unit.container</module>
+        <module>uuf.app.creator</module>
+        <module>uuf.unit.creator</module>
+    </modules>
+    <packaging>pom</packaging>
+</project>

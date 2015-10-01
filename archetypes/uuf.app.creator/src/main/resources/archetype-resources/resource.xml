@@ -1,0 +1,35 @@
+<assembly>
+    <id>resources</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory></directory>
+            <outputDirectory>/</outputDirectory>
+            <!-- Excluding files and directories -->
+            <excludes>
+                <exclude>pom.xml</exclude>
+                <exclude>*.iml</exclude>
+                <exclude>**/src/**</exclude>
+                <exclude>**/target/**</exclude>
+                <exclude>resource.xml</exclude>
+                <exclude>**/layouts/**</exclude>
+                <exclude>**/pages/**</exclude>
+                <exclude>**/units/**</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet>
+            <directory></directory>
+            <outputDirectory>app</outputDirectory>
+            <!-- Including files and directories -->
+            <includes>
+                <include>**/layouts/**</include>
+                <include>**/pages/**</include>
+                <include>**/units/**</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+</assembly>
