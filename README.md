@@ -20,19 +20,19 @@ This repository contains three main modules.
   
   
 #### unit.creator   
-   group-id : uuf.maven.tools
+   group-id : org.wso2.carbon.ui.uuf.maven.tools
    
-   artifact-id : uuf.unit.creator
+   artifact-id : uuf-unit-creator
    
 #### app.creator
-   group-id : uuf.maven.tools
+   group-id : org.wso2.carbon.ui.uuf.maven.tools
    
-   artifact-id : uuf.app.creator
+   artifact-id : uuf-app-creator
    
 #### multiple.unit.container
-   group-id : uuf.maven.tools
+   group-id : org.wso2.carbon.ui.uuf.maven.tools
    
-   artifact-id : uuf.multiple.unit.container
+   artifact-id : uuf-multiple-unit-container
    
    
 ## How to create a unit
@@ -93,7 +93,7 @@ This repository contains three main modules.
        
   To do this you have to first build the uuf-template-app.
         
-  1. Clone this repository. `git clone https://github.com/wso2-incubator/uuf-template-app.git` to your machine.
+  1. Clone this repository. `git clone https://github.com/sajithar/carbin-uuf.git` to your machine.
         
   2. Go to the root directory of the uuf-template-app and build it using `mvn clean install`
         
