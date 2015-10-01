@@ -10,13 +10,9 @@
           </includes>
       </fileSet>
       <fileSet filtered="true" encoding="UTF-8">
-          <directory>/</directory>
+          <directory></directory>
           <includes>
-              <directory>pages</directory>
-              <directory>layouts</directory>
               <include>resource.xml</include>
-              <include>jaggery.conf</include>
-              <include>**/lib/**</include>
           </includes>
           <excludes>
               <exclude>*.iml</exclude>
@@ -24,10 +20,10 @@
           </excludes>
       </fileSet>
       <fileSet encoding="UTF-8">
-          <directory>pages</directory>
+          <directory>units</directory>
       </fileSet>
       <fileSet encoding="UTF-8">
-          <directory>units</directory>
+          <directory>pages</directory>
       </fileSet>
       <fileSet encoding="UTF-8">
           <directory>layouts</directory>
